@@ -21,7 +21,7 @@
           <a href="index.html">
             <li>Inicio</li>
           </a>
-          <a href="">
+          <a href="Categorias.html">
             <li>Categorías</li>
           </a>
           <a href="conocenos.html">
@@ -32,7 +32,7 @@
       </nav>
     </div>
     <header>
-      <h2>Ayúdanos</h2>
+      <h2>Iniciar sección</h2>
     </header>
     <div class="container">
       <article>

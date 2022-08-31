@@ -20,7 +20,7 @@
           <a href="index.html">
             <li>Inicio</li>
           </a>
-          <a href="">
+          <a href="Categorias.html">
             <li>Categorías</li>
           </a>
           <a href="conocenos.html">
@@ -45,6 +45,9 @@
             <br>
             <input type="submit" name="registro">
           </form>
+          <a href="Iniciar_sesion.php">
+            <span>Iniciar sección</span>
+          </a>
         </article>
       </div>
     </div>
