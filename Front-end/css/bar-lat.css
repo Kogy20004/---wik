@@ -1,0 +1,36 @@
+.bar-lat {
+  width: 15%;
+  margin: 5px 5px 0 0;
+  background-color: #f8f9fa;
+  border: 1px solid #c8ccd1;
+  height: fit-content;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 15%);
+  border-radius: 10px;
+  border-left: 1px solid #0073ff;
+  border-right: 1px solid #0073ff;
+}
+
+.bar-lat{
+  position: sticky;
+  top: 10px;
+}
+
+.bar-lat > div {
+  margin: 8px;
+  font-size: 0.8rem;
+}
+.bar-lat h2 {
+  text-align: center;
+}
+
+.bar-lat ol{
+  padding: 0 0 0 10px;
+}
+.bar-lat ol ol{
+  list-style-type: square;
+  padding: 0 10px;
+}
+.bar-lat li{
+  margin-top: 10px;
+}
