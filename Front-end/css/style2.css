@@ -1,0 +1,19 @@
+body{
+    background: #f6f6f6;
+}
+
+.area-A{
+    grid-area: a;
+}
+.area-B{
+    grid-area: b;
+}
+.area-C{
+    grid-area: c;
+}
+.area-D{
+    grid-area: d;
+}
+.area-E{
+    grid-area: e;
+}

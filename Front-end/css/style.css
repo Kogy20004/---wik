@@ -1,0 +1,81 @@
+header {
+  display: flex;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e3/Wikipedia_logo_letters_banner.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+#u-001 {
+  margin-left: 50px;
+}
+#u-002 {
+  margin-right: 100px;
+}
+#u-002 a {
+  margin: 0 5px 0 0;
+}
+
+.articulos {
+  display: flex;
+  width: 100%;
+}
+
+.articulos .secciones {
+  width: 55%;
+}
+
+.articulos .novedades {
+  width: 45%;
+}
+
+section {
+  padding: 10px;
+}
+
+article {
+  background-color: #f8f9fa;
+  border: 1px solid #c8ccd1;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 15%);
+  padding: 8px;
+  margin: 10px 0 30px 0;
+  border-radius: 10px;
+}
+
+.secciones article {
+  display: grid;
+  grid-template-areas:
+    "a a"
+    "b b"
+    "c d"
+    "e e";
+  grid-template-columns: 70% 30%;
+}
+
+.img-art {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid #c8ccd1;
+  background-color: #e7e7e7;
+  height: 65%;
+  margin: auto auto;
+}
+
+.secciones article span {
+  color: gray;
+  font-size: 0.8em;
+}
+
+.secciones article h3 {
+  padding: 5px;
+  margin-block-start: 7px;
+  margin-block-end: 7px;
+}
+
+.secciones article p {
+  margin-block-start: 7px;
+  margin-block-end: 7px;
+}

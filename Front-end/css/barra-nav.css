@@ -1,0 +1,30 @@
+.barra-nav {
+  background: rgba(192, 192, 192, 0.75);
+  top: 8px;
+  border-radius: 25px;
+}
+
+.barra-nav nav {
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.barra-nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.barra-nav li {
+  display: inline;
+  margin: 0 10px;
+  padding: 9px;
+  background: rgb(133, 133, 133);
+  border-radius: 25px;
+}
+
+.barra-nav .buscador {
+  width: 150px;
+}
+
+.barra-nav a:-webkit-any-link {
+  color: white;
+}
