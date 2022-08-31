@@ -16,7 +16,7 @@ $filas = mysqli_num_rows($resultado1);
 // }
 
 if ($filas) {
-  header("location:../conocenos.html");
+  header("location:../ayudanos.html");
 } else {
   echo "No has ingresado al sistema";
 }

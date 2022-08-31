@@ -1,31 +1,41 @@
 header {
   display: flex;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e3/Wikipedia_logo_letters_banner.svg);
-  background-position: right;
+  background-position: left;
   background-repeat: no-repeat;
+  background-size: cover;
   justify-content: space-between;
   padding: 15px;
+  height: 70px;
+}
+header h1{
+  margin: auto 0;
+  padding-left: 80px;
 }
 
-header h2 {
-  margin: 8px auto;
-}
-
-.container > article{
-  width: fit-content;
-  margin: 0 auto;
-  padding: 15px;
-}
-.articulos{
-  width: 75%;
-  margin: 5px auto;
-}
-article {
+article{
   background-color: #f8f9fa;
-  border: 1px solid #c8ccd1;
+  border-left: 2px solid #0073ff;
+  border-right: 2px solid #0073ff;
   border-radius: 2px;
   box-shadow: 0 1px 1px rgb(0 0 0 / 15%);
-  padding: 8px;
-  margin: 10px 0 30px 0;
-  border-radius: 10px;
+  padding: 5px 15px;
+  margin: 5px 0 0 0;
+  border-radius: 8px;
+}
+
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: -1em;
+  margin-block-end: 1em;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 2px;
+}
+
+p{
+  text-align: justify;
+  font-size: 1rem;
 }
