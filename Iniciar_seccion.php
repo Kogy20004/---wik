@@ -32,7 +32,7 @@
       </nav>
     </div>
     <header>
-      <h2>Iniciar sección</h2>
+      <h2>Iniciar sesión</h2>
     </header>
     <div class="container">
       <article>

@@ -41,12 +41,12 @@
             <input type="email" name="email" id="email" placeholder="Correo electrónico">
             <br>
             <label for="pass">Ingresa la contraseña</label>
-            <input type="password" name="pass" id="pass" placeholder="Contraseña">
+            <input type="password" name="pass" id="pass" placeholder="Contraseña" min="7" require>
             <br>
             <input type="submit" name="registro">
           </form>
           <a href="Iniciar_seccion.php">
-            <span>Iniciar sección</span>
+            <span>Iniciar sesión</span>
           </a>
         </article>
       </div>
