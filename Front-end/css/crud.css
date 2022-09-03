@@ -1,0 +1,76 @@
+.row{
+	display: flex;
+}
+
+.col-1{
+	width: 30%;
+	background: rgba(237, 230, 219, 0.5);
+}
+.col-1 h1 {
+	width: fit-content;
+	margin: 25px auto;
+}
+.col-1 form {
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+}
+.col-1 .button:hover{
+	display: inline-block;
+	margin: 0 0.5rem;
+
+	animation: shakeX;
+	animation-duration: .9s;
+}
+.col-1 div{
+	justify-content: center;
+	margin: 5px auto;
+	display: inline-grid;
+}
+
+.col-2{
+	width: 70%;
+	background: rgba(143, 189, 211, 0.507);
+}
+.col-2 a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+	background: rgb(157, 83, 83);
+	padding: 5px;
+	border-radius: 25px;
+}
+.table{
+	border-spacing: 0;
+	margin: 25px auto;
+}
+.table thead{
+	background: rgb(216, 248, 225);
+}
+.table thead th{
+	padding: 8px;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+
+.table thead th:nth-child(1){
+	width: 80px;
+}
+.table thead th:nth-child(2){
+	width: 250px;
+}
+.table thead th:nth-child(3){
+	width: 150px;
+}
+.table tbody th{
+	padding: 10px;
+	border-bottom: 2px solid black;
+}
+.table tbody tr:nth-child(2n){
+	background: rgb(255, 205, 202);
+}
+.table tbody tr:nth-child(2n+1){
+	background: rgb(255, 255, 185);
+}
+
