@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Iniciar sección</title>
+  <title>Iniciar sesión</title>
   <link rel="stylesheet" href="Front-end/css/iniciar_sesion.css" />
   <link rel="stylesheet" href="Front-end/css/bar-lat.css" />
   <link rel="stylesheet" href="Front-end/css/barra-nav.css">

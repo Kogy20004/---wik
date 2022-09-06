@@ -8,21 +8,21 @@ header {
   padding: 15px;
   height: 70px;
 }
-header h1{
+header h1 {
   margin: auto 0;
   padding-left: 80px;
 }
 
-.container{
+.container {
   display: flex;
 }
 
-.informacion{
+.informacion {
   width: 85%;
-  padding-left: 10px; ;
+  padding-left: 10px;
 }
 
-.informacion article{
+.informacion article {
   background-color: #f8f9fa;
   border-left: 2px solid #0073ff;
   border-right: 2px solid #0073ff;
@@ -44,7 +44,21 @@ hr {
   border-width: 2px;
 }
 
-p{
+p {
   text-align: justify;
   font-size: 1rem;
+}
+
+blockquote {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border-left: 4px solid #a7cfff;
+  font-size: 90%;
+  margin: 1em 4em;
+  padding: 0.4em 0.8em;
+}
+
+.cite{
+  text-align: right;
 }

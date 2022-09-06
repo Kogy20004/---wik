@@ -8,21 +8,26 @@ a {
 }
 
 .img-art {
-  float: right;
   border: 1px solid #c8ccd1;
   background-color: #e7e7e7;
   height: fit-content;
+  width: fit-content;
   padding: 8px;
   margin: 15px;
+  float: right;
 }
+
+.left{
+  float: left;
+}
+
 .img-art div{
   margin: auto auto;
   display: flex;
 
 }
 .img-art img{
-  height: 80%;
-  width: 80%;
+  max-height: 300px;
 }
 
 header {
@@ -36,7 +41,7 @@ header {
 }
 
 header h2,header p,header a,header h1{
-  background-color: rgba(202, 204, 217, 0.777);
+  background-color: rgb(231, 231, 231);
   width: fit-content;
   padding: 10px;
   border-radius: 25px;

@@ -28,7 +28,7 @@
 		echo'
 		<script>
 			alert("Usuario almacenado exitosamente")
-			window.location = "../Iniciar_seccion.php";
+			window.location = "../Iniciar_sesion.php";
 		</script>
 		';
 	}else{

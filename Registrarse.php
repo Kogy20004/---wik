@@ -45,7 +45,7 @@
             <br>
             <input type="submit" name="registro">
           </form>
-          <a href="Iniciar_seccion.php">
+          <a href="Iniciar_sesion.php">
             <span>Iniciar sesión</span>
           </a>
         </article>
