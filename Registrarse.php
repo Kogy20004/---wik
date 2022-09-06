@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="Front-end/css/bar-lat.css" />
   <link rel="stylesheet" href="Front-end/css/barra-nav.css">
   <link rel="stylesheet" href="Front-end/css/general.css">
+  <link rel="stylesheet" href="Front-end/css/iniciar_sesion.css" />
 </head>
 
 <body>
@@ -34,20 +35,31 @@
       <h2>Registrarse</h2>
     </header>
     <div class="container">
+      <article>
+        Para ayudarnos debes registrarse
+      </article>
       <div class="articulos">
         <article>
           <form action="Back-end/registro.php" method="post">
-            <label for="email">Ingresa Correo electrónico</label>
-            <input type="email" name="email" id="email" placeholder="Correo electrónico">
-            <br>
-            <label for="pass">Ingresa la contraseña</label>
-            <input type="password" name="pass" id="pass" placeholder="Contraseña" min="7" require>
-            <br>
-            <input type="submit" name="registro">
+            <div class="formulario">
+              <div class="input">
+                <label for="email">Ingresa Correo electrónico</label>
+                <input type="email" name="email" id="email" placeholder="Correo electrónico" minlength="6">
+              </div>
+              <div class="input">
+                <label for="pass">Ingresa la contraseña</label>
+                <input type="password" name="pass" id="pass" placeholder="Contraseña" minlength="3">
+              </div>
+              <div class="button">
+                <input type="submit" name="registro" value="Registrarse">
+              </div>
+            </div>
           </form>
-          <a href="Iniciar_sesion.php">
-            <span>Iniciar sesión</span>
-          </a>
+          <div class="formulario">
+            <a href="Iniciar_sesion.php">
+              <span>Iniciar sesión</span>
+            </a>
+          </div>
         </article>
       </div>
     </div>

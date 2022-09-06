@@ -3,7 +3,7 @@ a {
   color: #0645ad;
 }
 
-* {
+:root {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -17,36 +17,37 @@ a {
   float: right;
 }
 
-.left{
+.left {
   float: left;
 }
 
-.img-art div{
+.img-art div {
   margin: auto auto;
   display: flex;
-
 }
-.img-art img{
+.img-art img {
   max-height: 300px;
 }
 
 header {
   display: flex;
-  background-image: url("../Img/head.jpg") ;
+  background-image: url("../Img/head.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover ;
+  background-size: cover;
   justify-content: space-between;
   padding: 15px;
+  margin-bottom: 8px;
 }
 
-header h2,header p,header a,header h1{
+header h2,
+header p,
+header a,
+header span,
+header h1 {
   background-color: rgb(231, 231, 231);
   width: fit-content;
   padding: 10px;
   border-radius: 25px;
-}
-
-header h2{
-  margin: 19px 0 0 0;
+  margin: 6px 1px 1px 1px;
 }

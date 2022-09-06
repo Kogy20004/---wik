@@ -1,31 +1,85 @@
 header {
   display: flex;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e3/Wikipedia_logo_letters_banner.svg);
+  background-image: url("../Img/head.jpg");
   background-position: right;
   background-repeat: no-repeat;
   justify-content: space-between;
   padding: 15px;
+  margin-bottom: 8px;
 }
 
-header h2 {
-  margin: 8px auto;
-}
-
-.container > article{
+.container > article {
   width: fit-content;
   margin: 0 auto;
   padding: 15px;
 }
-.articulos{
+.articulos {
   width: 75%;
   margin: 5px auto;
 }
 article {
   background-color: #f8f9fa;
-  border: 1px solid #c8ccd1;
+  border-left: 2px solid #0073ff;
+  border-right: 2px solid #0073ff;
   border-radius: 2px;
   box-shadow: 0 1px 1px rgb(0 0 0 / 15%);
-  padding: 8px;
-  margin: 10px 0 30px 0;
-  border-radius: 10px;
+  padding: 5px 15px;
+  margin: 8px 0 0 0;
+  border-radius: 8px;
+}
+
+.input {
+  display: grid;
+  margin: 0 0 10px 0;
+}
+
+.input label {
+  text-align: center;
+}
+
+.input input {
+  width: 225px;
+}
+
+input[type="email" i],
+input[type="password" i] {
+  padding: 2px 3px;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #0073ff;
+  margin: 10px 0;
+  background-color: #f8f9fa;
+  font-size: 1.1rem;
+
+}
+
+:focus-visible {
+  outline: transparent auto 0;
+}
+
+input[type="submit" i],button {
+  border-radius: 20px;
+  border-width: 2px ;
+  border-style: solid;
+  border-color: #0073ff;
+  padding: 5px 10px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+input[type="submit" i]:hover,button:hover{
+  background-color: rgba(0, 115, 255, 0.144);
+  font-weight: bold;
+}
+
+.formulario {
+  margin: 10px 50px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.formulario a{
+  padding-top: 15px;
 }

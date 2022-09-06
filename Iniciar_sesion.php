@@ -36,23 +36,30 @@
     </header>
     <div class="container">
       <article>
-        Para ayudarnos a ingresar una nueva pagina en la Wiki debes iniciar
-        sesión
+        Para ayudarnos debes iniciar sesión
       </article>
       <div class="articulos">
         <article>
           <form action="Back-end/login.php" method="post">
-            <label for="email">Ingresa Correo electrónico</label>
-            <input type="email" name="email" id="email" placeholder="Correo electrónico">
-            <br>
-            <label for="pass">Ingresa la contraseña</label>
-            <input type="password" name="pass" id="pass" placeholder="Contraseña">
-            <br>
-            <button>Ingresar</button>
+            <div class="formulario">
+              <div class="input">
+                <label for="email">Ingresa Correo electrónico</label>
+                <input type="email" name="email" id="email" placeholder="Correo electrónico" autofocus>
+              </div>
+              <div class="input">
+                <label for="pass">Ingresa la contraseña</label>
+                <input type="password" name="pass" id="pass" placeholder="Contraseña">
+              </div>
+              <div class="button">
+                <input type="submit" name="Iniciar sesión" value="Iniciar sesión">
+              </div>
+            </div>
           </form>
-          <a href="Registrarse.php">
-            <span>Registrarse</span>
-          </a>
+          <div class="formulario">
+            <a href="Registrarse.php">
+              <span>Registrarse</span>
+            </a>
+          </div>
         </article>
       </div>
     </div>
