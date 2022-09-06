@@ -44,7 +44,7 @@
             <div class="formulario">
               <div class="input">
                 <label for="email">Ingresa Correo electrónico</label>
-                <input type="email" name="email" id="email" placeholder="Correo electrónico" autofocus>
+                <input type="email" name="email" id="email" placeholder="Correo electrónico" autofocus >
               </div>
               <div class="input">
                 <label for="pass">Ingresa la contraseña</label>
