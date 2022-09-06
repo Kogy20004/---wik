@@ -1,10 +1,10 @@
 <?php
 
-include("conex.php");
-$con = conectar();
+include("../db.php");
+
 
 $sql = "SELECT * FROM `login`";
-$query = mysqli_query($con, $sql);
+$query = mysqli_query($db, $sql);
 
 $row = mysqli_fetch_array($query);
 ?>

@@ -1,11 +1,10 @@
 <?php
-    include("conex.php");
-    $con = conectar();
-    $id =$_GET['id'] ;
+include("../db.php");
+$id = $_GET['id'];
 
-    $sql ="DELETE FROM `login` WHERE id ='$id'" ;
-    $query = mysqli_query($con,$sql);
+$sql = "DELETE FROM `login` WHERE id ='$id'";
+$query = mysqli_query($db, $sql);
 
-        if ($query) {
-            header("location: crud.php");
-        }
+if ($query) {
+    header("location: crud.php");
+}

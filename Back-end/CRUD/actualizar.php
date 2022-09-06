@@ -1,11 +1,10 @@
 <?php
-include("conex.php");
-$con = conectar();
+include("../db.php");
 
 $id_I = $_GET['id'];
 
 $sql = "SELECT * FROM `login` WHERE id = '$id_I' ";
-$query = mysqli_query($con, $sql);
+$query = mysqli_query($db, $sql);
 
 $row = mysqli_fetch_array($query);
 
