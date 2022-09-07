@@ -18,31 +18,66 @@ $row = mysqli_fetch_array($query);
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Actualizar</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-	<link rel="stylesheet" href="../../Front-end/css/form.css">
+	<link rel="stylesheet" href="../../Front-end/css/general.css">
+	<link rel="stylesheet" href="../../Front-end/css/barra-nav.css">
+	<link rel="stylesheet" href="../../Front-end/css/iniciar_sesion.css">
+	<link rel="stylesheet" href="../../Front-end/css/crud.css">
 </head>
 
 <body>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-	<div class="container">
 
-		<div class="col-4 form">
-			<form action="update.php" method="POST" >
-				<input type="hidden" name="id" value="<?php echo $row ?>">
-				<div class="mb-3">
-					<label for="email" class="form-label">Ingresa el correo electrónico</label>
-					<input type="text" class="form-control" name="email" placeholder="Correo electrónico" value="<?php echo $row['email'] ?>">
-
-				</div>
-				<div class="mb-3">
-					<label for="pass" class="form-label">Ingresa la contraseña</label>
-					<input type="text" class="form-control" name="pass" placeholder="Contraseña" require value="<?php echo $row['pass'] ?>">
-				</div>
-				<input type="submit" value="Actualizar" class="btn btn-primary">
-			</form>
+	<div class="cuerpo">
+		<div class="barra-nav">
+			<nav>
+				<ul>
+					<a href="index.html">
+						<li>Inicio</li>
+					</a>
+					<a href="Categorias.html">
+						<li>Categorías</li>
+					</a>
+					<a href="conocenos.html">
+						<li>Conócenos</li>
+					</a>
+					<div class="buscador"></div>
+				</ul>
+			</nav>
+		</div>
+		<header>
+			<h2></h2>
+		</header>
+		<div class="container">
+			<div class="articulos">
+				<article>
+					<div class="but-svg">
+						<a href="crud.php">
+							<button>
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+									<path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+								</svg>
+							</button>
+						</a>
+					</div>
+					<form action="update.php" method="post">
+						<div class="formulario">
+							<input type="hidden" name="id" value="<?php echo $row ?>">
+							<div class="input">
+								<label for="email">Actualizar el Correo electrónico</label>
+								<input type="email" name="email" id="email" placeholder="Correo electrónico" value="<?php echo $row['email'] ?>">
+							</div>
+							<div class="input">
+								<label for="pass">Actualizar la contraseña</label>
+								<input type="text" name="pass" id="pass" placeholder="Contraseña" value="<?php echo $row['pass'] ?>">
+							</div>
+							<div class="button">
+								<input type="submit" name="Actualizar" value="Actualizar">
+							</div>
+						</div>
+					</form>
+				</article>
+			</div>
 		</div>
 	</div>
-
 </body>
 
 </html>
