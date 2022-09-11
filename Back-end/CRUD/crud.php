@@ -27,23 +27,25 @@ $row = mysqli_fetch_array($query);
 </head>
 
 <body>
-<div class="barra-nav">
-      <nav>
-        <ul>
-          <a href="index.html">
-            <li>Inicio</li>
-          </a>
-          <a href="Categorias.html">
-            <li>Categorías</li>
-          </a>
-          <a href="conocenos.html">
-            <li>Conócenos</li>
-          </a>
-          <div class="buscador"></div>
-        </ul>
-      </nav>
-    </div>
-	<header><p></p></header>
+	<div class="barra-nav">
+		<nav>
+			<ul>
+				<a href="../../index.html">
+					<li>Inicio</li>
+				</a>
+				<a href="../../Categorias.html">
+					<li>Categorías</li>
+				</a>
+				<a href="../../conocenos.html">
+					<li>Conócenos</li>
+				</a>
+				<div class="buscador"></div>
+			</ul>
+		</nav>
+	</div>
+	<header>
+		<p></p>
+	</header>
 	<div class="container">
 		<div class="row">
 
@@ -97,7 +99,7 @@ $row = mysqli_fetch_array($query);
 
 									<th><?php echo $row['id'];  ?></th>
 									<th><?php echo $row['email'];  ?></th>
-									<th><?php echo $row['pass'];  ?></th>
+									<th style="-webkit-text-security: disc !important;"><?php echo $row['pass'];  ?></th>
 									<th><a href="actualizar.php?id=<?php echo $row['id']; ?>">Editar</a></th>
 									<th><a href="delete.php?id=<?php echo $row['id']; ?>">Eliminar</a></th>
 								</tr>

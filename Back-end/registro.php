@@ -3,8 +3,8 @@
 	include 'db.php';
 
 	
-	$correo = $_POST ['email'];
-	$clave = $_POST ['pass'];
+	$correo = $_POST['email'];
+	$clave = $_POST['pass'];
 
 
 	$query = "INSERT INTO `login`(email, pass) 
@@ -24,13 +24,21 @@
 
 	$ejecutar = mysqli_query($db, $query);
 
+
+	$sql = "SELECT * FROM `login` where email='$correo'";
+	$query = mysqli_query($db, $sql);
+	$row = mysqli_fetch_array($query);
+
+
+	$id = $row['id'];
+
 	if($ejecutar){
 		echo'
 		<script>
 			alert("Usuario almacenado exitosamente")
-			window.location = "../Iniciar_sesion.php";
 		</script>
 		';
+		header("location:../datos_usuarios.php?id=$id");
 	}else{
 		echo'
 		<script>

@@ -1,0 +1,44 @@
+input[type="email" i],
+input[type="password" i],
+input[type="text" i],
+select {
+  padding: 2px 3px;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #0073ff;
+  margin: 10px 0;
+  background-color: #f8f9fa;
+  font-size: 1.1rem;
+}
+select{
+	border-radius: 20px;
+}
+
+option {
+	font-weight: 0.8em;
+	display: block;
+	white-space: nowrap;
+	min-height: 0.8em;
+	padding: 0px 2px 1px;
+	font-size: 0.8em;
+}
+
+.input > div {
+  display: contents;
+}
+
+.input {
+  display: block;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.Fecha_datos div {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.input label {
+  margin-right: 5px;
+}
