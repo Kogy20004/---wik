@@ -8,6 +8,8 @@ $query = mysqli_query($db, $sql);
 
 $row = mysqli_fetch_array($query);
 
+$Meses_año = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
+
 ?>
 
 <!DOCTYPE html>
@@ -22,10 +24,10 @@ $row = mysqli_fetch_array($query);
 	<link rel="stylesheet" href="../../Front-end/css/barra-nav.css">
 	<link rel="stylesheet" href="../../Front-end/css/iniciar_sesion.css">
 	<link rel="stylesheet" href="../../Front-end/css/crud.css">
+	<link rel="stylesheet" href="../../Front-end/css/datos_usuarios.css">
 </head>
 
 <body>
-
 	<div class="cuerpo">
 		<div class="barra-nav">
 			<nav>
@@ -60,17 +62,118 @@ $row = mysqli_fetch_array($query);
 					</div>
 					<form action="update.php" method="post">
 						<div class="formulario">
-							<input type="hidden" name="id" value="<?php echo $row ?>">
+							<input type="hidden" name="id" value="<?php echo $row['id'] ?>">
 							<div class="input">
 								<label for="email">Actualizar el Correo electrónico</label>
 								<input type="email" name="email" id="email" placeholder="Correo electrónico" value="<?php echo $row['email'] ?>">
 							</div>
 							<div class="input">
 								<label for="pass">Actualizar la contraseña</label>
-								<input type="text" name="pass" id="pass" placeholder="Contraseña" value="<?php echo $row['pass'] ?>">
+								<input type="password" name="pass" id="pass" placeholder="Contraseña" value="<?php echo $row['pass'] ?>">
 							</div>
-							<div class="button">
-								<input type="submit" name="Actualizar" value="Actualizar">
+							<div class="formulario">
+								<div class="input">
+									<div>
+										<label for="Nombre">Nombres: </label>
+										<input type="text" name="Nombre" id="Nombre" placeholder="Ej; Mariana" value="<?php echo $row['Nombre'] ?>">
+									</div>
+									<div>
+										<label for="Apellido">Apellidos: </label>
+										<input type="text" name="Apellido" id="Apellido" placeholder="Ej: Angel Torres" value="<?php echo $row['Apellido'] ?>">
+									</div>
+								</div>
+								<div class="input">
+									<label for="birthday_day">Fecha de nacimiento</label>
+									<div class="Fecha_datos">
+										<div>
+											<div>
+												<label for="Día">Dia </label>
+												<select aria-label="Día" name="Día" id="Día">
+													<?php
+													for ($i = 1; $i <= 31; $i++) {
+														if ($i == $row['Día']) {
+													?>
+															<option value="<?php echo $i ?>" selected><?php echo $i ?></option>
+														<?php
+														} else {
+														?>
+															<option value="<?php echo $i ?>"><?php echo $i ?></option>
+													<?php
+														}
+													}
+													?>
+												</select>
+											</div>
+											<div>
+												<label for="Mes">Mes </label>
+												<select aria-label="Mes" name="Mes" id="Mes">
+													<?php
+													for ($i = 1; $i <= 12; $i++) {
+														if ($i == $row['Mes']) {
+													?>
+															<option value="<?php echo $i ?>" selected><?php echo $Meses_año[$i - 1] ?></option>
+														<?php
+														} else {
+														?>
+															<option value="<?php echo $i ?>"><?php echo $Meses_año[$i - 1] ?></option>
+													<?php														}
+													}
+													?>
+												</select>
+											</div>
+											<div>
+												<label for="Año">Año </label>
+												<select aria-label="Año" name="Año" id="Año">
+													<?php
+													for ($i = 2022; $i >= 1905; $i--) {
+														if ($i == $row['Año']) {
+													?>
+															<option value="<?php echo $i ?>" selected><?php echo $i ?></option>
+														<?php
+														} else {
+														?>
+															<option value="<?php echo $i ?>"><?php echo $i ?></option>
+													<?php														}
+													}
+													?>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="input">
+									<div>
+										<label for="Genero">Hombre</label>
+										<?php
+										if ($row['Genero'] == 1) {
+										?>
+											<input type="radio" name="Genero" value="1" checked>
+										<?php
+										} else {
+										?>
+											<input type="radio" name="Genero" value="1">
+										<?php
+										}
+										?>
+									</div>
+									<div>
+										<label for="Genero">Mujer</label>
+										<?php
+										if ($row['Genero'] == 2) {
+										?>
+											<input type="radio" name="Genero" value="2" checked>
+										<?php
+										} else {
+										?>
+											<input type="radio" name="Genero" value="2">
+										<?php
+										}
+										?>
+									</div>
+								</div>
+								<div class="button">
+									<input type="submit" name="Actualizar" value="Actualizar">
+								</div>
 							</div>
 						</div>
 					</form>

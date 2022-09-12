@@ -6,7 +6,7 @@ $id = $_POST['id'];
 $Nombre_I = $_POST['Nombre'];
 $Apellido_I = $_POST['Apellido'];
 $Día_I = $_POST['Día'];
-$Mes_I = $_POST['Mes'] ;
+$Mes_I = $_POST['Mes'];
 $Año_I = $_POST['Año'];
 $Genero_I = $_POST['Genero'];
 
@@ -19,4 +19,3 @@ if ($ejecutar) {
 }
 
 mysqli_close($db);
-
